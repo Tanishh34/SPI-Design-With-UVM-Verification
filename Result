@@ -1,0 +1,217 @@
+[2025-12-26 10:35:31 UTC] vlib work && vlog '-timescale' '1ns/1ns' +incdir+$RIVIERA_HOME/vlib/uvm-1.2/src -l uvm_1_2 -err VCP2947 W9 -err VCP2974 W9 -err VCP3003 W9 -err VCP5417 W9 -err VCP6120 W9 -err VCP7862 W9 -err VCP2129 W9 design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"  
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = /home/runner/work/work.lib
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+MESSAGE "Unit top modules: tb."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 5[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2023.04.112.8911 built for Linux64 on May 12, 2023.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2023 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.5 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 6 (33.33%) other processes in SLP
+# SLP: 44 (0.14%) signals in SLP and 29 (0.09%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 29934 kB (elbread=2114 elab2=22819 kernel=5000 sdf=0)
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test test...
+# KERNEL: UVM_INFO /home/runner/testbench.sv(257) @ 10: uvm_test_top.e.ag.mon [mon] RESET SYSTEM!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(257) @ 30: uvm_test_top.e.ag.mon [mon] RESET SYSTEM!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(257) @ 50: uvm_test_top.e.ag.mon [mon] RESET SYSTEM!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(257) @ 70: uvm_test_top.e.ag.mon [mon] RESET SYSTEM!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(257) @ 90: uvm_test_top.e.ag.mon [mon] RESET SYSTEM!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(194) @ 90: uvm_test_top.e.ag.drv [drv] RESET DONE!
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 110: uvm_test_top.e.ag.drv [drv] wr:[1],address:[20],din:[46]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 610: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[20],din:[46],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 610: uvm_test_top.e.sco [sco] data:[46] stored at address:[20]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 630: uvm_test_top.e.ag.drv [drv] wr:[1],address:[10],din:[151]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 1130: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[10],din:[151],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 1130: uvm_test_top.e.sco [sco] data:[151] stored at address:[10]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 1150: uvm_test_top.e.ag.drv [drv] wr:[1],address:[23],din:[105]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 1650: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[23],din:[105],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 1650: uvm_test_top.e.sco [sco] data:[105] stored at address:[23]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 1670: uvm_test_top.e.ag.drv [drv] wr:[1],address:[27],din:[164]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 2170: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[27],din:[164],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 2170: uvm_test_top.e.sco [sco] data:[164] stored at address:[27]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 2190: uvm_test_top.e.ag.drv [drv] wr:[1],address:[21],din:[72]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 2690: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[21],din:[72],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 2690: uvm_test_top.e.sco [sco] data:[72] stored at address:[21]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 2710: uvm_test_top.e.ag.drv [drv] wr:[1],address:[5],din:[85]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 3210: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[5],din:[85],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 3210: uvm_test_top.e.sco [sco] data:[85] stored at address:[5]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 3230: uvm_test_top.e.ag.drv [drv] wr:[1],address:[12],din:[203]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 3730: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[12],din:[203],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 3730: uvm_test_top.e.sco [sco] data:[203] stored at address:[12]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 3750: uvm_test_top.e.ag.drv [drv] wr:[1],address:[10],din:[170]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 4250: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[10],din:[170],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 4250: uvm_test_top.e.sco [sco] data:[170] stored at address:[10]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 4270: uvm_test_top.e.ag.drv [drv] wr:[1],address:[30],din:[242]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 4770: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[30],din:[242],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 4770: uvm_test_top.e.sco [sco] data:[242] stored at address:[30]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(212) @ 4790: uvm_test_top.e.ag.drv [drv] wr:[1],address:[8],din:[163]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(267) @ 5290: uvm_test_top.e.ag.mon [mon] wr:[1],addr:[8],din:[163],err:[0],done:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(305) @ 5290: uvm_test_top.e.sco [sco] data:[163] stored at address:[8]
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 5310: uvm_test_top.e.ag.drv [drv] wr:[0],address:[9]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 5790: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[9],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 5790: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 5810: uvm_test_top.e.ag.drv [drv] wr:[0],address:[1]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 6290: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[1],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 6290: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 6310: uvm_test_top.e.ag.drv [drv] wr:[0],address:[15]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 6790: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[15],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 6790: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 6810: uvm_test_top.e.ag.drv [drv] wr:[0],address:[19]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 7290: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[19],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 7290: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 7310: uvm_test_top.e.ag.drv [drv] wr:[0],address:[14]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 7790: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[14],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 7790: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 7810: uvm_test_top.e.ag.drv [drv] wr:[0],address:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 8290: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[0],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 8290: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 8310: uvm_test_top.e.ag.drv [drv] wr:[0],address:[8]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 8790: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[8],dout:[163],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 8790: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 8810: uvm_test_top.e.ag.drv [drv] wr:[0],address:[6]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 9290: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[6],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 9290: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 9310: uvm_test_top.e.ag.drv [drv] wr:[0],address:[27]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 9790: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[27],dout:[164],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 9790: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(220) @ 9810: uvm_test_top.e.ag.drv [drv] wr:[0],address:[7]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(276) @ 10290: uvm_test_top.e.ag.mon [mon] wr:[0],addr:[7],dout:[0],err:[0]
+# KERNEL: UVM_INFO /home/runner/testbench.sv(315) @ 10290: uvm_test_top.e.sco [sco] TEST PASSED!
+# KERNEL: ----------------------------------------------------------
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_objection.svh(1271) @ 10310: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_report_server.svh(869) @ 10310: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :   69
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [RNTST]     1
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [drv]    21
+# KERNEL: [mon]    25
+# KERNEL: [sco]    20
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 10310 ns,  Iteration: 57,  Instance: /tb,  Process: @INITIAL#417_2@.
+# KERNEL: stopped at time: 10310 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Creating result.zip...
+  adding: .aldec/ (stored 0%)
+  adding: .aldec/Riviera-PRO/ (stored 0%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/ (stored 0%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/log/ (stored 0%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/config/ (stored 0%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/config/preferences/ (stored 0%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/config/preferences/application.xml (deflated 12%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/config/preferences/framework.xml (deflated 61%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/config/setup.xml (deflated 10%)
+  adding: .aldec/Riviera-PRO/2023.04.112.8911/config/console.history (deflated 33%)
+  adding: tr_db.log (deflated 5%)
+  adding: work/ (stored 0%)
+  adding: work/1work.mgf (deflated 91%)
+  adding: work/0work.mgf (deflated 20%)
+  adding: work/slp/ (stored 0%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/ (stored 0%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/ext.gen (deflated 52%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/slp_model.so (deflated 70%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/slp_model.info (stored 0%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/slp_model2.info (stored 0%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/slp_model_par.info (deflated 80%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/spi.gen (deflated 73%)
+  adding: work/slp/d0a269f3105a270cd0399d8b6d56b70b/signal_split.info (deflated 52%)
+  adding: work/slp/slp_catalog.info (stored 0%)
+  adding: work/work.lib (deflated 85%)
+  adding: work/3work.mgf (deflated 5%)
+  adding: work/elaboration.log (deflated 96%)
+  adding: work/vcp_cmd.log (deflated 45%)
+  adding: library.cfg (deflated 9%)
+  adding: dump.vcd (deflated 83%)
+  adding: dataset.asdb (deflated 93%)
+  adding: .flexlmrc (stored 0%)
+  adding: testbench.sv (deflated 81%)
+  adding: design.sv (deflated 80%)
+  adding: ACCELLERA_OVL_VHDL_LIB/ (stored 0%)
+  adding: run.sh (deflated 44%)
+  adding: .bash_profile (deflated 21%)
+  adding: .bash_logout (stored 0%)
+  adding: .bashrc (deflated 23%)
+[2025-12-26 10:35:44 UTC] Waiting for download...
+Done
